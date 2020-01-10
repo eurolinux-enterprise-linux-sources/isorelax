@@ -36,7 +36,7 @@ URL:            http://iso-relax.sourceforge.net/
 Epoch:          1
 Version:        0
 # I can't use %%{cvstag} as dashes aren't allowed in Release tags
-Release:        0.15.release20050331%{?dist}
+Release:        0.14.release20050331%{?dist}
 License:        MIT and ASL 1.1
 BuildArch:      noarch
 
@@ -103,9 +103,6 @@ install -p -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_mavenpomdir}/JPP-%{name}.pom
 %{_javadocdir}/*
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1:0-0.15.release20050331
-- Mass rebuild 2013-12-27
-
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1:0-0.14.release20050331
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
